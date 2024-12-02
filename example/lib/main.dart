@@ -59,7 +59,6 @@ class _DemoPageState extends State<DemoPage> {
               children: <Widget>[
                 (imagePrecached == true)
                     ? ImageView360(
-                        key: UniqueKey(),
                         imageList: imageList,
                         autoRotate: autoRotate,
                         rotationCount: rotationCount,

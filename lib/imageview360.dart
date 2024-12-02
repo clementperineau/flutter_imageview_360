@@ -33,7 +33,7 @@ class ImageView360 extends StatefulWidget {
   final Function(int? currentImageIndex)? onImageIndexChanged;
 
   ImageView360({
-    required Key key,
+    Key? key,
     required this.imageList,
     this.autoRotate = false,
     this.allowSwipeToRotate = true,
@@ -42,7 +42,7 @@ class ImageView360 extends StatefulWidget {
     this.rotationDirection = RotationDirection.clockwise,
     this.frameChangeDuration = const Duration(milliseconds: 80),
     this.onImageIndexChanged,
-  }) : super(key: key);
+  });
 
   @override
   _ImageView360State createState() => _ImageView360State();
